@@ -1,0 +1,30 @@
+{
+  "name": "shinshu-solutions-dashboard",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2025-10-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "sam"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "shinshu-solutions",
+      "database_id": "b3463aea-6a59-4794-9f9d-e9a56167fb46"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "saas-admin-template-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
